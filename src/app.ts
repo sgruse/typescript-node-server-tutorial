@@ -1,9 +1,9 @@
-// External Dependencies
+// Import express
 import * as express from 'express'
 
 class App {
 
-	// ref to Express instance
+	// Ref to Express instance
 	public express: express.Application
 
 	//Run configuration methods on the Express instance.
@@ -16,7 +16,7 @@ class App {
 	private routes(): void {
 
 		let router = express.Router();
-		// placeholder route handler
+		// Placeholder route handler
 		router.get('/', (req, res, next) => {
 			res.json({
 				message: 'Your Typescript Server'
@@ -26,4 +26,4 @@ class App {
 	}
 }
 
-export default new App().express
+export default App
